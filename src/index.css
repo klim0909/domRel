@@ -1,0 +1,20 @@
+.field{
+    display: grid;
+    border: 1px solid black;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 100px;
+    margin-left: 10%;
+    width: 614px;
+}
+.cell{
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    border: 3px solid black;
+}
+
+.img{
+    display: block;
+    width: 100px;
+    height: 100px;
+  }

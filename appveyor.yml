@@ -2,8 +2,7 @@ version: 1.0.{build}
 image: Visual Studio 2019
 
 # Настройка сборки проекта
-build:
-  project: YourProject.sln
+build: off
 
 # Шаги для установки зависимостей и сборки проекта
 install:

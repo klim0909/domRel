@@ -4,10 +4,7 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
   mode: 'development', // Установка режима разработки
-  entry: './src/index.js',
-  entry: './src/goblin.jpg',
-  entry: './src/index.css',
- // Точка входа вашего приложения - JavaScript файл
+  entry: 'index.js',// Точка входа вашего приложения - JavaScript файл
   output: {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist'), // Папка для собранного проекта
@@ -31,7 +28,7 @@ module.exports = {
   plugins: [
     new CleanWebpackPlugin(), // Плагин для очистки папки сборки
     new HtmlWebpackPlugin({ // Плагин для создания HTML файла
-      template: './src/index.html', // Шаблон HTML файла
+      template: 'index.html', // Шаблон HTML файла
     }),
   ],
   devServer: {
